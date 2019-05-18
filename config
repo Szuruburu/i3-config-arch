@@ -135,7 +135,7 @@ bindsym $mod+q split toggle
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+bindsym $mod+s layout toggle split
 bindsym $mod+w layout tabbed
 # bindsym $mod+e layout toggle split
 
@@ -382,7 +382,7 @@ set_from_resource $term_color15    color15
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
 	i3bar_command i3bar
-	status_command i3status
+	status_command /home/szuruburu/scripts/net-speed.sh
 	position top
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
