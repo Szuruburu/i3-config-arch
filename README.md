@@ -8,6 +8,7 @@ ln -sf ~/i3-config-arch/ranger.conf ~/.config/ranger/rc.config
 ln -sf ~/i3-config-arch/user-dirs.dirs ~/.config/user-dirs.dirs
 ln -sf ~/i3-config-arch/rofi-themes/sidebar.rasi ~/.local/share/rofi/themes/sidebar.rasi
 ln -sf ~/i3-config-arch/compton/compton.conf ~/.config/compton.conf
+ln -sf ~/i3-config-arch/dunstrc ~/.config/dunst/dunstrc
 ```
 
 ##### Required packages:
