@@ -92,7 +92,7 @@ bindsym Ctrl+Print exec spectacle -r
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym Ctrl+Shift+Escape exec --no-startup-id gnome-system-monitor
 
-# focus_follows_mouse no
+focus_follows_mouse no
 
 # change focus
 bindsym $mod+h focus left
@@ -383,8 +383,8 @@ bar {
 	position top
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#	tray_output primary
-#	tray_output eDP1
+	tray_output primary
+	#tray_output HDMI-1
 
 	bindsym button4 nop
 	bindsym button5 nop
