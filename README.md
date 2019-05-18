@@ -10,3 +10,12 @@ ln -sf ~/i3-config-arch/rofi-themes/sidebar.rasi ~/.local/share/rofi/themes/side
 ln -sf ~/i3-config-arch/compton/compton.conf ~/.config/compton.conf
 ```
 
+##### Required packages:
+
+fonts:
+
+```bash
+nerd-fonts-complete
+ttf-roboto
+```
+
