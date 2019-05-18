@@ -100,6 +100,9 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
+bindsym $mod+Shift+f focus floating
+bindsym $mod+Shift+t focus tiling
+
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -277,7 +280,7 @@ for_window [urgent=latest] focus
 bindsym $mod+Shift+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+Shift+r restart && pkill compton && compton --blur-method kawase --blur-strength 3
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
@@ -385,16 +388,18 @@ bar {
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 	tray_output primary
 	#tray_output HDMI-1
+	#tray_padding 1
 
 	bindsym button4 nop
 	bindsym button5 nop
-#   font xft:URWGothic-Book 11
+	font xft:monofurNerdFont 11
 	strip_workspace_numbers yes
+	separator_symbol ":|:"
 
     colors {
         background #181818
         statusline #F9FAF9
-        separator  #454947
+        separator  #393939
 
 #                   	   border  backgr. text
         focused_workspace  #F9FAF9 #16a085 #292F34
