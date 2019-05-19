@@ -272,6 +272,7 @@ for_window [class="St" instance="floating"] resize grow up 200
 for_window [class="St" instance="floating"] resize grow down 200
 #for_window [class="Spotify"] resize grow right 850px
 for_window [class="Arandr"] floating enable border pixel 2
+for_window [class="vlc"] floating enable border pixel 2
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
